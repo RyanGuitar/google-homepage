@@ -5,8 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Homepage</title>
+    <style>
+    body {
+        font-family: arial, sans-serif;
+    }
+    .nav-image-dots {
+        opacity:0.7;
+        padding: 0 23px 0 23px;
+        width:18px;
+        height:18px;
+    }
+    .nav-image-avatar {
+        margin-right:10px;
+        width:32px;
+        height:32px;
+        border-radius:50%;
+    }
+    a {
+        padding-left:10px;
+        font-size:13px;
+        text-decoration:none;
+    }
+    .container {
+        padding:6px;
+        height:32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .logo, .input  {
+        display:flex;
+        justify-content:center;
+    }
+    .input {   
+        padding:20px;
+    }
+    input {
+        outline:none;
+        border:hidden;
+        width:487px;
+        height:34px;
+    }
+    .input {
+        display:flex;
+        flex-direction:row;
+    }
+    .input-icon {
+        padding:5px;
+        width:22px;
+        height:auto;
+    }
+    .casing {
+        border-radius:50px;
+        border:1px solid lightgray;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:570px;
+        height:46px;
+    }
+    .alt-links {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding: 10px 0 0;
+    }
+    .alt-links-text {
+        font-size:15px;
+        margin:11px 4px;
+        background-color:#f8f9fa;
+        padding:10px;
+    }
+    #search {
+        width:14px;
+        height:auto;
+        opacity:0.5;
+    }
+    p {
+        font-size:10px;
+    }
+    </style>
 </head>
 <body>
     
+    <nav class="container">
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <img class="nav-image-dots" src="nine-dots.png" alt="nine-spots.png">
+      <img class="nav-image-avatar" src="avatar.png" alt="avatar">  
+    </nav>
+
+    <div class="logo">
+        <img src="google-log.png" alt="google logo">
+    </div>
+
+    <div class="input">
+        <div class="casing">
+            <img src="Google-search.png" alt="search icon" class="input-icon" id="search">
+            <input type="text">
+            <img src="google-microphone.png" alt="microphone icon" class="input-icon">
+        </div>
+    </div>
+
+    <div class="alt-links">
+        <a href="#" class="alt-links-text">Google Search</a>
+        <a href="#" class="alt-links-text">I'm Feeling Lucky</a>
+    </div>
+   
 </body>
 </html>
